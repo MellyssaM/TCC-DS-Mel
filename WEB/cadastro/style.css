@@ -1,0 +1,86 @@
+body {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quadro-lateral{
+    background-color: #000000bb;
+    width: 35%;
+    height: 1200px;
+    position: absolute;
+    color: #fff;
+    box-shadow: #0056b3;
+}
+
+.quadro-lateral h1{
+    font-size: 25px;
+    color: #0056b3;
+}
+
+.quadro-lateral p{
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 1%;
+}
+
+.button-back{
+    width: 160px;
+    height: 50px;
+    border-color: #00000000;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 900px;
+}
+
+.button-back:hover{
+    background-color: #4f5a66;
+    transition: background-color 0.6s;
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+#input-cadastro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#input-cadastro form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+
+    & input,
+    button {
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    & button {
+        cursor: pointer;
+        background-color: #0056b3;
+        border-color: #f4f4f900;
+    }
+}
