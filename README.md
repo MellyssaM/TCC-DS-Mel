@@ -20,7 +20,7 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 * MySQL
 * HTML
 * CSS
-* JS
+* JavaScript (Vanilla)
 
 
 ## Github dos Desenvolvedores
@@ -44,7 +44,7 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 | Desenvolvimento  | Alterações |
 | ------------- |:-------------:|
 | 16/03/2025     | Começo do Projeto     |
-| 18/03/2025     | Pagina de Cadastro em Progresso    |
+| 18/03/2025     | Pagina de Cadastro em Progresso;    |
 
 
 ## ByPedroDuarte

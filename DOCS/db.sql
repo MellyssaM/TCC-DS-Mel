@@ -1,4 +1,3 @@
-Exemplo de DB 
 
 DROP database DigitalD;
 CREATE DATABASE DigitalD;
