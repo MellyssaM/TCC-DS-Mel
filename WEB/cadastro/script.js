@@ -5,7 +5,7 @@ const form = document.querySelector('#cadastro form')
 form.addEventListener('submit', e => {
     e.preventDefault()
     const dados = {
-        nome: form.nome.value,
+        nome_cli: form.nome_cli.value,
         email: form.email.value,
         senha: form.senha.value,
     }
