@@ -168,3 +168,19 @@ main {
     font-size: 20px;
     padding: 15px;
 }
+
+.pag-title h1{
+  background-color: #0057b300;
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  transform: translate(345%,20%);
+}
+
+.pag-title img{
+    width: 40px;
+}
