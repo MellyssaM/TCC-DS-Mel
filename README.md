@@ -18,7 +18,7 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 | ------------- |:-------------:|
 | HTML | Modelo     |
 | CSS    | Visão |
-| JS    | Controle |
+| JS (Vanilla)  | Controle |
 | VsCode    | IDE (Ambiente integrado de desenvolvimento) |
 | Insomnia    | Testar, criar e simular APIs |
 | Node.js    | Interpretar codigos em JavaScript (Vanilla) |
