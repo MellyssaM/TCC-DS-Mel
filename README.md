@@ -1,4 +1,5 @@
 # Diagnostico Digital Projeto
+Em processo de desenvolvimento
 
 ## Integrantes: Pedro Duarte, Rodrigo Passberg, Lizzie de Sousa e Mellyssa S.
 
