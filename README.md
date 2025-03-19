@@ -14,13 +14,16 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 ## Tecnologias Utilizadas para o Desenvolvimento
 
 
-* Node.js
-* Insomnia
-* Xampp
-* MySQL
-* HTML
-* CSS
-* JavaScript (Vanilla)
+| Linguagens  | MVC |
+| ------------- |:-------------:|
+| HTML | Modelo     |
+| CSS    | Visão |
+| JS    | Controle |
+| VsCode    | IDE (Ambiente integrado de desenvolvimento) |
+| Insomnia    | Testar, criar e simular APIs |
+| Node.js    | Interpretar codigos em JavaScript (Vanilla) |
+| Xampp    | Software que gera um servidor web local (Banco de Dados) |
+| Git    | Ferramenta colaborativa de versionamento |
 
 
 ## Github dos Desenvolvedores
