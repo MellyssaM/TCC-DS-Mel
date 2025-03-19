@@ -2,7 +2,7 @@
 
 ## Integrantes: Pedro Duarte, Rodrigo Passberg, Lizzie de Sousa e Mellyssa S.
 
-# Instituição e Curso
+## Instituição e Curso
 
 Projeto desenvolvido com o intuito educacional dos alunos de Desevolvimento de Sistemas - SENAI Jaguariúna 
 
