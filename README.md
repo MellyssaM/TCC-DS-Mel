@@ -30,7 +30,7 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 
 * [Pedro Duarte](https://github.com/PedroDNRusso)
 * [Mellyssa Silveira](https://github.com/mellyssaS)
-* [Rodrigo Passber](https://github.com/RodrigoPassberg)
+* [Rodrigo Passberg](https://github.com/RodrigoPassberg)
 * [Lizzie de Sousa](https://github.com/BigLizziee)
 
 ## Github dos Professores
