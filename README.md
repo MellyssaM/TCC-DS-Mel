@@ -42,12 +42,12 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 * [Robson Souza](https://github.com/robsonbsouzaa)
 
 
-## Calendario
+## Progresso de Desenvolvimento
 
-| Desenvolvimento  | Alterações |
+| Data  | Alterações |
 | ------------- |:-------------:|
 | 16/03/2025     | Começo do Projeto     |
-| 18/03/2025     | Pagina de Cadastro Pronta e Conectada com o DB  |
+| 17/03/2025 - 18/03/2025     | Pagina de Cadastro Pronta e Conectada com o DB  |
 
 
 ## ByPedroDuarte
