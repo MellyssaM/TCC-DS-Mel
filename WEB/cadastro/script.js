@@ -19,7 +19,8 @@ form.addEventListener('submit', e => {
             if (resp == 201)
                 window.location.reload();
             else
-                alert('Erro ao enviar dados para a API');
+                alert('Cadastro feito com sucesso!');
+                window.location.href = './index';
         })
 })
 }
