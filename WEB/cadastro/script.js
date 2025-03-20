@@ -20,7 +20,7 @@ form.addEventListener('submit', e => {
                 window.location.reload();
             else
                 alert('Cadastro feito com sucesso!');
-                window.location.href = './index';
+                window.location.reload();
         })
 })
 }

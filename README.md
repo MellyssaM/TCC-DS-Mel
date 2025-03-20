@@ -49,6 +49,7 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 | ------------- |:-------------:|
 | 16/03/2025     | Começo do Projeto     |
 | 17/03/2025 - 18/03/2025     | Pagina de Cadastro Pronta e Conectada com o DB  |
+| 19/03/2025     | Inicio do desenvolvimento da pagina de login  |
 
 
 ## ByPedroDuarte

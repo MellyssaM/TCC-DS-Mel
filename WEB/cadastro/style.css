@@ -1,3 +1,4 @@
+/* Estrutura inicial da pagina */
 body {
     position: fixed;
     top: 0;
@@ -11,6 +12,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Quadro na lateral esquerda da pagina com uma imagem */
 .quadro-lateral{
     background-image: url(https://th.bing.com/th/id/R.b5fb17342b38f4bae4e624ae6984ff9e?rik=NtUo1GZeYCpCDQ&pid=ImgRaw&r=0);
     background-repeat: no-repeat;
@@ -35,6 +38,8 @@ body {
     margin-top: 1%;
 }
 
+
+/* Botão no canto inferior esquerdo do quadro */
 .button-back {
     width: 160px;
     height: 50px;
@@ -56,6 +61,8 @@ body {
     transition: background-color 0.6s;
 }
 
+
+/* Form de cadastro do usuario */
 main {
     width: 130%;
     height: 80vh;
@@ -145,7 +152,7 @@ main {
         transition: .5s;
       }
 
-
+/* Texto de orientação colocado na parte superior central do quadro */
 .text-info{
     background-color: #00000000;
     width: 550px;
