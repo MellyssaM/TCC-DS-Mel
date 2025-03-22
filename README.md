@@ -15,16 +15,16 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 ## Tecnologias Utilizadas para o Desenvolvimento
 
 
-| Linguagens  | MVC |
+| Linguagens e Ferramentas  | MVC |
 | ------------- |:-------------:|
-| HTML | Modelo     |
-| CSS    | Visão |
-| JS (Vanilla)  | Controle |
-| VsCode    | IDE (Ambiente integrado de desenvolvimento) |
-| Insomnia    | Testar, criar e simular APIs |
-| Node.js    | Interpretar codigos em JavaScript (Vanilla) |
-| Xampp    | Software que gera um servidor web local (Banco de Dados) |
-| Git    | Ferramenta colaborativa de versionamento |
+| [HTML](https://html.spec.whatwg.org/multipage/) | Modelo     |
+| [CSS](https://www.w3.org/Style/CSS/Overview.en.html)    | Visão |
+| [JavaScript (Vanilla)](https://262.ecma-international.org/)  | Controle |
+| [Vscode](https://code.visualstudio.com/)    | IDE (Ambiente integrado de desenvolvimento) |
+| [Insomnia](https://insomnia.rest/download)   | Testar, criar e simular APIs |
+| [Node.js](https://nodejs.org/pt)    | Interpretar codigos em JavaScript (Vanilla) |
+| [Xampp](https://www.apachefriends.org/pt_br/index.html)    | Software que gera um servidor web local (Banco de Dados) |
+| [Git](https://git-scm.com/downloads)    | Ferramenta colaborativa de versionamento |
 
 
 ## Github dos Desenvolvedores
@@ -50,6 +50,7 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 | 16/03/2025     | Começo do Projeto     |
 | 17/03/2025 - 18/03/2025     | Pagina de Cadastro Pronta e Conectada com o DB  |
 | 19/03/2025     | Inicio do desenvolvimento da pagina de login  |
+| 22/03/2025     | Model e View da pagina Login pronta  |
 
 
 ## ByPedroDuarte
