@@ -51,6 +51,7 @@ O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colo
 | 17/03/2025 - 18/03/2025     | Pagina de Cadastro Pronta e Conectada com o DB  |
 | 19/03/2025     | Inicio do desenvolvimento da pagina de login  |
 | 22/03/2025     | Model e View da pagina Login pronta  |
+| 23/03/2025     | Atualizando MV das paletas de cores, pagina de Cadastro, Login e Home  |
 
 
 ## ByPedroDuarte

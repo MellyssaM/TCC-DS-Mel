@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Paleta de cores */
+:root{
+  --primary-color: #0056b3;
+  --primary-color-dark:#007bff;
+  --primary-color-light:#e9f7f7;
+  --secondary-color:#fb923c;
+  --secundary-color-dark: #c5671a;
+}
+
 /* Estrutura inicial da pagina */
 body {
   position: fixed;
@@ -7,9 +18,9 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: var(--primary-color-light);
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins';
 }
 
 
@@ -23,13 +34,13 @@ body {
   width: 35%;
   height: 1200px;
   position: absolute;
-  color: #fff;
+  color: var(--primary-color-light);
   box-shadow: 0 0 8px 4px #042344;
 }
 
 .quadro-lateral h1{
   font-size: 25px;
-  color: #0056b3;
+  color: var(--primary-color);
 }
 
 .quadro-lateral p{
@@ -46,10 +57,10 @@ body {
   border: none; 
   border-radius: 20px;
   cursor: pointer;
-  background-color: #0056b3;
+  background-color: #fb923c;
   font-size: 20px;
   font-weight: bold;
-  color: white; 
+  color: var(--primary-color-light); 
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -57,7 +68,7 @@ body {
 
 
 .button-back:hover{
-  background-color: #007bff;
+  background-color: #c5671a;
   transition: background-color 0.6s;
 }
 
@@ -150,7 +161,7 @@ input[type="reset"] {
 }
     input[type="submit"]:hover,
     input[type="reset"]:hover {
-      background-color: #0056b3;
+      background-color: #c5671a;
       transition: .5s;
     }
 
@@ -192,7 +203,7 @@ justify-content: space-between;
 align-items: center;
 margin: 0;
 position: absolute;
-transform: translate(345%,20%);
+transform: translate(320%,20%);
 }
 
 .pag-title img{
