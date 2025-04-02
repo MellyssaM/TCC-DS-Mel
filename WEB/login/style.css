@@ -1,211 +1,330 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-/* Paleta de cores */
-:root{
-  --primary-color: #0056b3;
-  --primary-color-dark:#007bff;
-  --primary-color-light:#e9f7f7;
-  --secondary-color:#fb923c;
-  --secundary-color-dark: #c5671a;
+/**
+ * * General variables
+ * */
+/**
+ * * General configs
+ * */
+ * {
+  box-sizing: border-box;
 }
 
-/* Estrutura inicial da pagina */
 body {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1em;
+}
+
+button {
+  background-color: transparent;
   padding: 0;
-  background-color: var(--primary-color-light);
-  position: relative;
-  font-family: 'Poppins';
-}
-
-
-/* Quadro na lateral esquerda da pagina com uma imagem */
-.quadro-lateral{
-  background-image: url(https://www.turkestrauss.com/wp-content/uploads/2022/09/AdobeStock_359409294-scaled-e1666327033212-600x765.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: #000000bb;
-  width: 35%;
-  height: 1200px;
-  position: absolute;
-  color: var(--primary-color-light);
-  box-shadow: 0 0 8px 4px #042344;
-}
-
-.quadro-lateral h1{
-  font-size: 25px;
-  color: var(--primary-color);
-}
-
-.quadro-lateral p{
-  font-size: 18px;
-  padding: 20px;
-  margin-top: 1%;
-}
-
-
-/* Botão no canto inferior esquerdo do quadro */
-.button-back {
-  width: 160px;
-  height: 50px;
-  border: none; 
-  border-radius: 20px;
+  border: 0;
+  outline: 0;
   cursor: pointer;
-  background-color: #fb923c;
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--primary-color-light); 
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-}
-
-
-.button-back:hover{
-  background-color: #c5671a;
-  transition: background-color 0.6s;
-}
-
-
-/* Form de cadastro do usuario */
-main {
-  width: 130%;
-  height: 80vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px
-}
-
-#input-cadastro {
-  background-color: rgba(255, 255, 255, 0);
-  margin-top: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  padding: 20px 30px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-form {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-label, input {
-  display: block;
-  width: 100%;
-  text-align: left;
-}
-
-label {
-  font-weight: bold;
-  font-size: .8rem;
 }
 
 input {
-  border-top: #00000000;
-  border-left: #00000000;
-  border-right: #00000000;
-  border-bottom: 2px solid #000000;
-  padding: 10px;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-input:focus {
-  border-bottom: 2px solid #08558B;
-}
-
-textarea:focus, input:focus{
-  outline: none;
-}
-
-a {
-  font-size: 15px;
-  text-decoration: none;
-  color: #000000;
-}
-
-a:hover {
-  color: #0044ff;
-  transition: .3s;
-}
-
-input[type="submit"],
-input[type="reset"] {
-  display: inline-block; 
-  width: 48%; 
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid gray;
-  height: 40px;
-  border-radius: 20px;
-  cursor: pointer;
-  color: black;
   background-color: transparent;
-  font-weight: bold;
-  transition: background-color 0.5s, color 0.5s;
-  margin: 0; 
-  padding: 0; 
-  vertical-align: middle; 
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
-    input[type="submit"]:hover,
-    input[type="reset"]:hover {
-      background-color: #c5671a;
-      transition: .5s;
-    }
+input[type=submit] {
+  cursor: pointer;
+}
+input::-moz-placeholder {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+input:-ms-input-placeholder {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+input::placeholder {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
 
-/* Texto de orientação colocado na parte superior central do quadro */
-.text-info{
-  background-color: #00000000;
-  width: 550px;
-  height: 500px;
-  border-radius: 20%;
-  position: absolute;
-  top: 10%;
-  right: 65px;
+/**
+ * * Bounce to the left side
+ * */
+@-webkit-keyframes bounceLeft {
+  0% {
+    transform: translate3d(100%, -50%, 0);
+  }
+  50% {
+    transform: translate3d(-30px, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+@keyframes bounceLeft {
+  0% {
+    transform: translate3d(100%, -50%, 0);
+  }
+  50% {
+    transform: translate3d(-30px, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+/**
+ * * Bounce to the left side
+ * */
+@-webkit-keyframes bounceRight {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
+  }
+  100% {
+    transform: translate3d(100%, -50%, 0);
+  }
+}
+@keyframes bounceRight {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
+  }
+  100% {
+    transform: translate3d(100%, -50%, 0);
+  }
+}
+/**
+ * * Show Sign Up form
+ * */
+@-webkit-keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/**
+ * * Page background
+ * */
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  background-size: cover;
+}
+.user_options-container {
+  position: relative;
+  width: 80%;
+}
+.user_options-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.85);
+  border-radius: 3px;
+}
+
+/**
+ * * Registered and Unregistered user box and text
+ * */
+.user_options-registered,
+.user_options-unregistered {
+  width: 50%;
+  padding: 75px 45px;
   color: #fff;
-  box-shadow: #0056b3;
+  font-weight: 300;
 }
 
-.text-info h1{
-  font-size: 35px;
-  color: #ffffff;
+.user_registered-title,
+.user_unregistered-title {
+  margin-bottom: 15px;
+  font-size: 1.66rem;
+  line-height: 1em;
 }
 
-.text-info h2{
-  color:#8a0000;
-  font-size: 25px;
+.user_unregistered-text,
+.user_registered-text {
+  font-size: 0.83rem;
+  line-height: 1.4em;
 }
 
-.text-info p{
-  color: #000000;
-  font-size: 20px;
-  padding: 15px;
+.user_registered-login,
+.user_unregistered-signup {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.2rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.user_registered-login:hover,
+.user_unregistered-signup:hover {
+  color: rgba(34, 34, 34, 0.85);
+  background-color: #ccc;
 }
 
-.pag-title h1{
-background-color: #0057b300;
-color: rgb(0, 0, 0);
-padding: 10px 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 0;
-position: absolute;
-transform: translate(320%,20%);
+/**
+ * * Login and signup forms
+ * */
+.user_options-forms {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: calc(50% - 30px);
+  min-height: 420px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform: translate3d(100%, -50%, 0);
+  transition: transform 0.4s ease-in-out;
+}
+.user_options-forms .user_forms-login {
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+.user_options-forms .forms_title {
+  margin-bottom: 45px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #e8716d;
+  letter-spacing: 0.1rem;
+}
+.user_options-forms .forms_field:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.user_options-forms .forms_field-input {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 6px 20px 6px 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 0.1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+.user_options-forms .forms_field-input:focus {
+  border-color: gray;
+}
+.user_options-forms .forms_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+.user_options-forms .forms_buttons-forgot {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+.user_options-forms .forms_buttons-forgot:hover {
+  color: #b3b3b3;
+}
+.user_options-forms .forms_buttons-action {
+  background-color: #e8716d;
+  border-radius: 3px;
+  padding: 10px 35px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.user_options-forms .forms_buttons-action:hover {
+  background-color: #e14641;
+}
+.user_options-forms .user_forms-signup,
+.user_options-forms .user_forms-login {
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  width: calc(100% - 80px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.5s ease-in-out;
+}
+.user_options-forms .user_forms-signup {
+  transform: translate3d(120px, 0, 0);
+}
+.user_options-forms .user_forms-signup .forms_buttons {
+  justify-content: flex-end;
+}
+.user_options-forms .user_forms-login {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  visibility: visible;
 }
 
-.pag-title img{
-  width: 40px;
+/**
+ * * Triggers
+ * */
+.user_options-forms.bounceLeft {
+  -webkit-animation: bounceLeft 1s forwards;
+          animation: bounceLeft 1s forwards;
+}
+.user_options-forms.bounceLeft .user_forms-signup {
+  -webkit-animation: showSignUp 1s forwards;
+          animation: showSignUp 1s forwards;
+}
+.user_options-forms.bounceLeft .user_forms-login {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-120px, 0, 0);
+}
+.user_options-forms.bounceRight {
+  -webkit-animation: bounceRight 1s forwards;
+          animation: bounceRight 1s forwards;
+}
+
+/**
+ * * Responsive 990px
+ * */
+@media screen and (max-width: 990px) {
+  .user_options-forms {
+    min-height: 350px;
+  }
+  .user_options-forms .forms_buttons {
+    flex-direction: column;
+  }
+  .user_options-forms .user_forms-login .forms_buttons-action {
+    margin-top: 30px;
+  }
+  .user_options-forms .user_forms-signup,
+.user_options-forms .user_forms-login {
+    top: 40px;
+  }
+
+  .user_options-registered,
+.user_options-unregistered {
+    padding: 50px 45px;
+  }
 }

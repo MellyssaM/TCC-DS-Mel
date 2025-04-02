@@ -6,38 +6,65 @@
     <title>DD - Diagnostico Digital </title>
     <link rel="shortcut icon" type="image/png" href="../img/titlelogo.png"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<div class="pag-title">
-    <h1><img src="../img/ddheader-removebg-preview.png">DD - Diagnostico Digital</h1>
-</div>
-    <div class="quadro-lateral">
-        <div class="text-info">
-            <center><h1>Entre na sua conta</h1></center>
-            <center><h2>Não esqueça de!</h2></center>
-            <p><br> - Não esqueça de salvar seu diagnostico em PDF <br>
-            <br> - Coloque informações verdadeiras sobre você e receba o melhor resultado possivel<br>
-            <br> - Nosso sistema é atulizado constantemente para os melhores e mais precisos resultados para você	e sua familia<br>
-            <br>Lembre que nosso site esta aqui para ajudar você a receber um diagnostico com resultados possiveis com os dados informados, logo apos o diagnostico recomendamos que você va a uma medico especializado para uma consulta profissional
-        </p>
-        <a href="../home/index.html"><button class="button-back">VOLTAR</button></a>
-        </div>   
+
+<section class="user">
+    <div class="user_options-container">
+      <div class="user_options-text">
+        <div class="user_options-unregistered">
+          <h2 class="user_unregistered-title">Ainda não possui uma conta?</h2>
+          <p class="user_unregistered-text">Faça seu cadastro!</p>
+          <button class="user_unregistered-signup" id="signup-button">Cadastre-se</button>
+        </div>
+  
+        <div class="user_options-registered">
+          <h2 class="user_registered-title">Possui uma conta?</h2>
+          <p class="user_registered-text">Faça seu login!</p>
+          <button class="user_registered-login" id="login-button">Login</button>
+        </div>
+      </div>
+      
+      <div class="user_options-forms" id="user_options-forms">
+        <div class="user_forms-login">
+          <h2 class="forms_title">Login</h2>
+          <form class="forms_form">
+            <fieldset class="forms_fieldset">
+              <div class="forms_field">
+                <input type="email" placeholder="Digite seu Email:" class="forms_field-input" required autofocus />
+              </div>
+              <div class="forms_field">
+                <input type="password" placeholder="Digite sua Senha:" class="forms_field-input" required />
+              </div>
+            </fieldset>
+            <div class="forms_buttons">
+              <button type="button" class="forms_buttons-forgot">Esqueceu sua Senha?</button>
+              <input type="submit" value="Log In" class="forms_buttons-action">
+            </div>
+          </form>
+        </div>
+        <div class="user_forms-signup">
+          <h2 class="forms_title">Cadastrar-se</h2>
+          <form class="forms_form">
+            <fieldset class="forms_fieldset">
+              <div class="forms_field">
+                <input type="text" placeholder="Digite seu Nome:" class="forms_field-input" required />
+              </div>
+              <div class="forms_field">
+                <input type="email" placeholder="Digite seu Email:" class="forms_field-input" required />
+              </div>
+              <div class="forms_field">
+                <input type="password" placeholder="Digite sua Senha:" class="forms_field-input" required />
+              </div>
+            </fieldset>
+            <div class="forms_buttons">
+              <input type="submit" value="Cadastre-se" class="forms_buttons-action">
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <section id="cadastro">
-    <main>
-    <div id="input-cadastro">
-        <form action="">
-            <h2>Entre na sua conta</h2>
-            <label for="email">E-MAIL</label>
-             <input type="email" name="email" id="email" placeholder="Insira seu Email..." required>
-            <label for="password">SENHA</label>
-             <input type="password" name="password" id="senha" placeholder="Insira sua senha..." required>
-             <a href="../cadastro/index.html"><p>Caso você não tenha uma conta, faça seu cadastro!</p></a>
-             <input onclick="cadastrar()" type="submit" value="entrar">
-        </form>
-    </div>
-</main>
-</section>
+  </section>
+
 <script src="script.js"></script>
 </html>
 </body>

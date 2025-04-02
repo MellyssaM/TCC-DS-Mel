@@ -1,21 +1,22 @@
-const $ = (elemento) => document.querySelector(elemento);
+/**
+ * Variables
+ */
+const signupButton = document.getElementById('signup-button'),
+    loginButton = document.getElementById('login-button'),
+    userForms = document.getElementById('user_options-forms')
 
-$("#entrar").addEventListener("click", (ev) => {
-  ev.preventDefault();
+/**
+ * Add event listener to the "Sign Up" button
+ */
+signupButton.addEventListener('click', () => {
+  userForms.classList.remove('bounceRight')
+  userForms.classList.add('bounceLeft')
+}, false)
 
-  const string = localStorage.getItem("usuario");
-  const usuarioCadastrado = JSON.parse(string);
-
-  const { email, senha } = usuarioCadastrado;
-
-  const dadosCorretos =
-  email === $("#email").value && senha === $("#senha").value;
-  console.log(dadosCorretos);
-
-  if (!dadosCorretos) {
-    alert("Dados inválidos!");
-    return;
-  }
-
-  window.location.href = "./index.html";
-});
+/**
+ * Add event listener to the "Login" button
+ */
+loginButton.addEventListener('click', () => {
+  userForms.classList.remove('bounceLeft')
+  userForms.classList.add('bounceRight')
+}, false)
