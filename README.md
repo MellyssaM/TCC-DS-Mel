@@ -1,7 +1,9 @@
 # Diagnostico Digital Projeto
 Em processo de desenvolvimento
 
-## Integrantes: Pedro Duarte, Rodrigo Passberg, Lizzie de Sousa e Mellyssa S.
+## Integrantes
+
+Pedro Duarte, Rodrigo Passberg, Lizzie de Sousa e Mellyssa S.
 
 ## Instituição e Curso
 
@@ -11,6 +13,9 @@ Projeto desenvolvido com o intuito educacional dos alunos de Desevolvimento de S
 
 O projeto vem com uma ideia de um diagnostico digital, onde o usuário irá colocar seus sintomas e ira receber uma diagnostico baseado em uma base de dados e uma inteligencia desenvolvida pelos alunos.
 
+## Metodologia Adotada
+
+Decidimos em adotar a metodologia Scrum, com sprints, cronogramas e dividindo o grupo por atividades (testers, programadores back-end, front-end, etc)
 
 ## Tecnologias Utilizadas para o Desenvolvimento
 
